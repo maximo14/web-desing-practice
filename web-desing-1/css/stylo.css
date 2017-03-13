@@ -1,3 +1,82 @@
-#hola {
-    color: rgb(222, 0, 50)
+*{
+    box-sizing: border-box;
 }
+
+.fRojo{
+    background-color: red;
+}
+
+.fRojo2{
+    background-color: crimson;
+}
+
+
+.fAzul{
+    background-color: blue;
+}
+
+.fVerde{
+    background-color: green;
+}
+.fGris{
+    background-color: gray;
+}
+.fViolet{
+    background-color: blueviolet;
+}
+
+
+#container{
+    margin-left: 20px;
+    margin-right: 20px;    
+    background-color: aquamarine;
+    padding-right: 10px;
+    padding-left: 10px;  
+}
+
+#header{
+       height: 90px;
+}
+
+#menu{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#cuerpo{
+    width: 100%;
+    height: 600px;
+}
+
+
+#menu-lateral{
+    float: left;
+    width: 24%;
+    height: 600px;
+    margin-right: 1%;
+}
+
+
+#principal{
+    float: right;
+    width: 75%;
+    height: 600px;
+}
+
+#footer{        
+    margin-top: 10px;
+    height: 100px;
+    clear: both;    
+}
+
+.caja{
+    background-color: red;
+    width: calc((93%/6));
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+ 
+
