@@ -58,6 +58,7 @@
 
 
 #principal{
+    padding-left: 3.5%;
     float: right;
     width: 75%;
     height: 600px;
@@ -71,12 +72,58 @@
 
 .caja{
     background-color: red;
-    width: calc((93%/6));
-    height: 100px;
+    width: calc((93%/2));
+    height: calc(93%/2);
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
-    margin-left: 1%;
+    margin-left: 1%;   
 }
  
+.center-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
+/*Parte de los media querys*/
+
+@media (max-width: 768px) { 
+    #menu-lateral{
+        float: none;
+        clear: none;
+        width: 100%; 
+    }
+
+    #principal{
+        float: none;
+        width: 100%;        
+    }
+
+    #cuerpo{
+        height: 1200px;
+    }
+} 
+
+@media (max-width: 479px){
+    .caja{
+        margin-top: 1.5%;
+        margin-left: 2.5%;
+        width: 95%;
+        height: calc(93%/4);
+        display: block;
+    }
+    #menu-lateral{
+        display: none; 
+    }  
+    #principal{
+        padding-top: 1.5%;
+    }
+
+    #cuerpo{       
+        height: 600px;
+    }
+}
