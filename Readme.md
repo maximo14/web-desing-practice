@@ -1,4 +1,4 @@
-# Practica de diferentes tecnicas de diseño web
+# Practica de diferentes tecnicas de maquetado diseño web
 
 En el web-desing-1 realizo una practica de diseño responsivo usando float y inline-block y otra practica usando flexbox.
 
