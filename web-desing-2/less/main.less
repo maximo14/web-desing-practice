@@ -1,23 +1,100 @@
-@base: #f938ab;
-@azul: rgb(0,0,255);
+@base-color-black: #000000;
+@base-color-darkblue: #000080;
+@base-color-white: #FFFFFF;
+@base-color-grey: #c0c0c0;
+@margin-top-section-article: 80px;
 
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
-}
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
-}
-.box {
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
-}
+@test-color-red: red;
+@test-color-blue: blue;
+@test-color-green: green;
+@test-color-yellow: yellow;
+@test-color-grey: grey;
 
-.manzano{
-    color: @azul;
+/*momentaniamente para teastear colores */
+*{
+  color: white;
 }
 
-.casita{
-    background-color: aqua;
+
+.flex-container{ 
+  display: flex;
+  flex-wrap:wrap;
+}
+header, body, .menu, section,article,footer,.slider,nav{
+  width: 100%;
+}
+nav{
+  background-color: black;
+}
+
+header{
+  background-color: @test-color-red;
+  height: 100px;  
+}
+#header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+#icono{
+  margin-left: 20px;
+}
+#msj{
+  margin-right: 20%;
+}
+
+
+body{
+  background-color:black;
+}
+
+.menu{
+  background-color: @test-color-blue;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  ul{
+    display: flex; 
+    list-style: none;
+    flex-wrap:wrap;  
+    li{
+      display: flex;
+      flex-wrap:wrap;  
+        a{
+          background-color: @test-color-red;
+          text-decoration: none;
+          text-align: center;  
+          padding: 10px;
+          &:hover{
+            background-color: pink;
+          }          
+        } 
+      }
+  } 
+}
+
+
+section, article{
+  margin-top: @margin-top-section-article;
+  height: 250px;
+}
+
+section{
+  background-color: @test-color-grey;  
+}
+
+article{
+  background-color: @test-color-yellow;
+}
+
+footer{
+  background-color: @test-color-red;
+  margin-top: @margin-top-section-article;
+  height: 75px;
+}
+
+.slider{
+  background-color: @test-color-grey;
+  height: 400px;
 }

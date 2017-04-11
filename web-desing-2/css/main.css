@@ -1,14 +1,84 @@
-.box {
-  color: #fe33ac;
-  border-color: #fdcdea;
+/*momentaniamente para teastear colores */
+* {
+  color: white;
 }
-.box div {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.manzano {
-  color: #0000ff;
+header,
+body,
+.menu,
+section,
+article,
+footer,
+.slider,
+nav {
+  width: 100%;
 }
-.casita {
-  background-color: aqua;
+nav {
+  background-color: black;
+}
+header {
+  background-color: red;
+  height: 100px;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#icono {
+  margin-left: 20px;
+}
+#msj {
+  margin-right: 20%;
+}
+body {
+  background-color: black;
+}
+.menu {
+  background-color: blue;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.menu ul li {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul li a {
+  background-color: red;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+.menu ul li a:hover {
+  background-color: pink;
+}
+section,
+article {
+  margin-top: 80px;
+  height: 250px;
+}
+section {
+  background-color: grey;
+}
+article {
+  background-color: yellow;
+}
+footer {
+  background-color: red;
+  margin-top: 80px;
+  height: 75px;
+}
+.slider {
+  background-color: grey;
+  height: 400px;
 }
